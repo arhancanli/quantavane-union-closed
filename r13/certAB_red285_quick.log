@@ -1,0 +1,6 @@
+N6: FAIL: N6[0]: FAIL near x = 0.653809533757403 [1.4s]
+N6: FAIL: N6[0]: cap [2857.6s]
+N5: PASS ([9.55490313377e-5 +/- 4.81e-18]) [0.0s]
+N5: PASS (9.55490313376952e-05) [0.0s]
+Program A red285_nocuts.json at (s_min=0.616829740033, 0.385, 0.4962, 0.215): Lambda_G - Psi e in [0.019788173 +/- 4.71e-10], in domain and all 0 cuts hold: True -> cannot PASS (red OK)
+Program B red285_nocuts.json at (s=0.6168297400332022, same e, bbar, Rbar): Lambda_G - Psi e in [1.978817e-02, 1.978817e-02], in domain and all 0 cuts hold: True -> cannot PASS (red OK)

@@ -1,0 +1,15 @@
+Program B (binary64 intervals + MPFR 4.2.2) group H red=0 start Wed Nov 18 22:52:49 2026
+== RB: contact identities at the r-ball (Program B)
+PASS RB G1  [value and gradient contain 0]
+PASS RB G2  [value and gradient contain 0]
+PASS RB G3  [value and gradient contain 0]
+PASS RB G4  [value and gradient contain 0]
+PASS RB R  [value and derivative contain 0]
+PASS RB S1b  [value and derivative contain 0]
+PASS RB b  [value and derivative contain 0]
+== H: contact Hessians (Program B)
+PASS H4 G1  [[0.675,0.705]^2 cells=256 min det lower=4.7104e-02]
+PASS H5 G2  [[0.675,0.705]^2 cells=256 min det lower=1.1437e+00]
+PASS H6 G3  [[0.675,0.705]^2 cells=4076 min det lower=2.0762e-05]
+PASS H7 G4  [[0.675,0.705]^2 cells=256 min det lower=1.7266e-01]
+END group H red=0 ALL PASS Wed Nov 18 22:52:51 2026

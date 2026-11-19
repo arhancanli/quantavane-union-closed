@@ -1,0 +1,13 @@
+Program A red285_Psi_low.json at (s_min=0.616829740033, 0.61414, 0.0008598, 0.002428): Lambda_G - Psi e in [1.9160467e-5 +/- 1.49e-13], in domain and all 5 cuts hold: True -> cannot PASS (red OK)
+Program B red285_Psi_low.json at (s=0.6168297400332022, same e, bbar, Rbar): Lambda_G - Psi e in [1.916047e-05, 1.916047e-05], in domain and all 5 cuts hold: True -> cannot PASS (red OK)
+Program A red285_nocorner.json at (s_min=0.616829740033, 0.385, 0.4962, 0.215): Lambda_G - Psi e in [0.019788173 +/- 4.71e-10], in domain and all 4 cuts hold: True -> cannot PASS (red OK)
+Program B red285_nocorner.json at (s=0.6168297400332022, same e, bbar, Rbar): Lambda_G - Psi e in [1.978817e-02, 1.978817e-02], in domain and all 4 cuts hold: True -> cannot PASS (red OK)
+Program A red285_nocuts.json at (s_min=0.616829740033, 0.385, 0.4962, 0.215): Lambda_G - Psi e in [0.019788173 +/- 4.71e-10], in domain and all 0 cuts hold: True -> cannot PASS (red OK)
+Program B red285_nocuts.json at (s=0.6168297400332022, same e, bbar, Rbar): Lambda_G - Psi e in [1.978817e-02, 1.978817e-02], in domain and all 0 cuts hold: True -> cannot PASS (red OK)
+== red285_eps295.json
+N5: FAIL: N5 FAIL [-0.000214450968662304784875633807881166910 +/- 3.70e-40] [0.0s]
+N5: FAIL: N5 FAIL [-0.0002144509686623047848756338078811669098349031411863131623909468827, -0.00021445096866230478487563380788116690983490314019209871363925964452] [0.0s]
+== red285_eps290.json
+N5: PASS ([9.55490313377e-5 +/- 4.81e-18]) [0.0s]
+N5: PASS (9.55490313376952e-05) [0.0s]
+Program B red285_cutbad.json cut 0 at x0 = 0.0: alpha . g in [-1.000000e-06, -1.000000e-06] -> cannot PASS (red OK)

@@ -1,0 +1,8 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group GK2 red=False start 2026-11-19 00:08:50 +0400
+== GK2: joint kernel F >= (3/20)[v^2 phi + phi v^2] + (51/2000)[phi R + R phi]
+FAIL GK2 edge reduction: kappa_K = qL - 2k - (9/50)a >= kappa4 (so lane 1's X0, X1, K11 edge sets apply)  [[-0.06864449628794987393864616759655690 +/- 7.58e-36]]
+PASS RB GK2(r,r) = 0 and grad = 0 (enclosures contain 0)
+FAIL HK2 GK2 Hessian PD on [0.675,0.705]^2  [cell x[0.67623046875,0.67625] y[0.67623046875,0.67625]: H11 [[-0.75508848537619054583061061726996007803 +/- 3.11e-39],[-0.75403964197074823347080074178167882803 +/- 3.11e-39]] |H12|<=[0.19507267544877369721699664687269265928 +/- 4.30e-39] H22 [[-0.75508848537619054583061061726996007803 +/- 3.11e-39],[-0.75403964197074823347080074178167882803 +/- 3.11e-39]]]
+FAIL GK2 > 0 off contact  [counterexample: value at (x,y)=(0.9994799999999999,0.9994799999999999) is [-0.000174893250839690508659146629564947 +/- 8.80e-37]]
+radius underestimates by the original code (boxes): 318
+END group GK2 red=False FAILED 2026-11-19 00:08:50 +0400

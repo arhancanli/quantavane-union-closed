@@ -1,0 +1,25 @@
+Z6 (abelian control): |G|=6 abelian=True |Aut|=2 twisted-translation perms=12 mode=all
+   R tested 63 (e not in R: 31); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 63; avg_L(R) != avg_L(R^-1): 0; in class but avg differ: 0
+   min avg/|G|: all R 1/2 = 0.5000; R outside class: None; non-coset R: (Fraction(17, 29), 0.5862068965517241)
+S3: |G|=6 abelian=False |Aut|=6 twisted-translation perms=36 mode=all
+   R tested 63 (e not in R: 31); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 63; avg_L(R) != avg_L(R^-1): 0; in class but avg differ: 0
+   min avg/|G|: all R 1/2 = 0.5000; R outside class: None; non-coset R: (Fraction(3, 5), 0.6)
+D4 (order 8): |G|=8 abelian=False |Aut|=8 twisted-translation perms=64 mode=all
+   R tested 255 (e not in R: 127); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 255; avg_L(R) != avg_L(R^-1): 0; in class but avg differ: 0
+   min avg/|G|: all R 1/2 = 0.5000; R outside class: None; non-coset R: (Fraction(3, 5), 0.6)
+Q8: |G|=8 abelian=False |Aut|=24 twisted-translation perms=192 mode=all
+   R tested 255 (e not in R: 127); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 255; avg_L(R) != avg_L(R^-1): 0; in class but avg differ: 0
+   min avg/|G|: all R 1/2 = 0.5000; R outside class: None; non-coset R: (Fraction(3, 5), 0.6)
+D5 (order 10): |G|=10 abelian=False |Aut|=20 twisted-translation perms=200 mode=all
+   R tested 1023 (e not in R: 511); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 1023; avg_L(R) != avg_L(R^-1): 0; in class but avg differ: 0
+   min avg/|G|: all R 1/2 = 0.5000; R outside class: None; non-coset R: (Fraction(10, 17), 0.5882352941176471)

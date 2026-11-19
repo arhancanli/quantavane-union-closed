@@ -1,0 +1,2 @@
+c = 1618035/1000000: edges ok = True; G(1/phi) <= -4.156e-07 -> cannot PASS (red OK)
+c = 7/4: edges ok = False; G(1/phi) <= -5.424e-02 -> cannot PASS (red OK)

@@ -1,0 +1,10 @@
+D7: |G|=14 abelian=False tested R=150 skipped(>300000)=0; min avg|S|/|G| = 0.500000 at R=('0b1', 16384); #R with avg_L != avg_R: 4
+D8: |G|=16 abelian=False tested R=150 skipped(>300000)=0; min avg|S|/|G| = 0.500000 at R=('0b100000001', 256); #R with avg_L != avg_R: 12
+D9: |G|=18 abelian=False tested R=150 skipped(>300000)=0; min avg|S|/|G| = 0.500000 at R=('0b100000000001', 512); #R with avg_L != avg_R: 16
+D10: |G|=20 abelian=False tested R=150 skipped(>300000)=0; min avg|S|/|G| = 0.500000 at R=('0b101', 1024); #R with avg_L != avg_R: 19
+D11: |G|=22 abelian=False tested R=150 skipped(>300000)=0; min avg|S|/|G| = 0.500000 at R=('0b100001', 2048); #R with avg_L != avg_R: 40
+D12: |G|=24 abelian=False tested R=150 skipped(>300000)=0; min avg|S|/|G| = 0.600000 at R=('0b10000000010000010001', 625); #R with avg_L != avg_R: 41
+S4: |G|=24 abelian=False tested R=148 skipped(>300000)=2; min avg|S|/|G| = 0.500000 at R=('0b100000000000000000001', 4096); #R with avg_L != avg_R: 87
+F21: |G|=21 abelian=False tested R=150 skipped(>300000)=0; min avg|S|/|G| = 0.588235 at R=('0b10000001', 132651); #R with avg_L != avg_R: 90
+F20: |G|=20 abelian=False tested R=149 skipped(>300000)=1; min avg|S|/|G| = 0.588235 at R=('0b11', 83521); #R with avg_L != avg_R: 82
+SL23: |G|=24 abelian=False tested R=148 skipped(>300000)=2; min avg|S|/|G| = 0.686374 at R=('0b10000011001', 109994); #R with avg_L != avg_R: 79

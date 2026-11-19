@@ -1,0 +1,2 @@
+Program A point control red270_Psi_low at (s_min, 0.60635, 0, 0.00181): Lambda_G - Psi e in [7.4302467e-5 +/- 1.7e-15], t in [0.93902113 +/- 2.18e-9] -> cannot PASS (red OK)
+red270_theta32.json: best feasible point (s,e,b,R) = (0.6168447400332019, 0.38500000100000004, 0.515, 0.2149) (s = SMIN is in Program B's search domain): Program B lower value 2.1587e-02 -> cannot PASS (red OK)

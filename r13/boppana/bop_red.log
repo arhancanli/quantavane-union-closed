@@ -1,0 +1,10 @@
+== A c=1618035/1000000
+middle: FAIL near 0.6197449886777257 (91243 intervals); edges PASS
+RESULT: FAIL
+== B c=1618035/1000000
+== A c=161803/100000
+middle: PASS (21381 intervals); edges PASS
+RESULT: PASS
+== A c=7/4
+middle: FAIL near 0.9864096341681374 (2428 intervals); edges FAIL
+RESULT: FAIL

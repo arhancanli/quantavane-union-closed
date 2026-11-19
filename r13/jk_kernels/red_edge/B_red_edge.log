@@ -1,0 +1,7 @@
+Program B (binary64 intervals + MPFR 4.2.2) group GK2 red=0 start Thu Nov 19 00:08:50 2026
+== GK2: joint kernel (Program B)
+FAIL GK2 edge reduction: kappa_K = qL - 2k - (9/50)a > kappa4  []
+PASS RB GK2  [value and gradient contain 0]
+FAIL HK2 GK2  [cell x[0.704985,0.705] y[0.704985,0.705] a11[-0.933158,-0.93229] a12[-0.230687,-0.229584] a22[-0.933158,-0.93229]]
+FAIL GK2 > 0 off contact  [counterexample: value at (0.49999990005, 0.49999990005) in [-0.0206591,-0.0206591]]
+END group GK2 red=0 FAILED Thu Nov 19 00:08:50 2026

@@ -1,0 +1,6 @@
+eps=2.30e-04 [SU kernels]: best G0=+0.001063 at a0=0.21 theta=44.0; psiG=0.013419 at s-m=-2.3e-04 e=0.5986 b=9.9e-18 R=2.13e-03
+eps=2.30e-04 [joint frontier]: best G0=+0.003918 at a0=0.21 theta=36.0; psiG=0.014245 at s-m=-2.3e-04 e=0.6059 b=8.3e-08 R=1.85e-03
+eps=2.50e-04 [SU kernels]: best G0=-0.000645 at a0=0.21 theta=40.0; psiG=0.015368 at s-m=-2.5e-04 e=0.6098 b=1.1e-07 R=3.28e-03
+eps=2.50e-04 [joint frontier]: best G0=+0.002383 at a0=0.21 theta=36.0; psiG=0.014340 at s-m=-2.5e-04 e=0.6059 b=1.4e-07 R=1.85e-03
+eps=2.80e-04 [SU kernels]: best G0=-0.003051 at a0=0.18 theta=36.0; psiG=0.015309 at s-m=-2.8e-04 e=0.6143 b=7.2e-17 R=3.82e-03
+eps=2.80e-04 [joint frontier]: best G0=+0.000080 at a0=0.21 theta=36.0; psiG=0.014483 at s-m=-2.8e-04 e=0.6059 b=9.8e-08 R=1.85e-03

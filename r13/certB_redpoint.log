@@ -1,0 +1,8 @@
+red_Psi_low.json: N3 point value in [-1.090219e-11, -1.088212e-11], feasible=True -> no conclusion
+red_Psi_0130.json: N3 point value in [6.093839e-04, 6.093839e-04], feasible=True -> cannot PASS (red OK)
+red_theta40.json: N3 point value in [-1.042691e-11, -1.040945e-11], feasible=True -> no conclusion
+params.json: N3 point value in [-1.401583e-03, -1.401583e-03], feasible=True -> no conclusion
+red_Rmax_low.json: R(0.984) >= 0.214811 vs Rmax 0.2148 -> cannot PASS (red OK)
+red_minor_up.json: at x = 0.9147 rhs >= 0.516395 > lhs <= 0.516391 -> cannot PASS (red OK)
+red_theta40.json: float sup Lambda_G/e = 0.017593 at (s-m, e, b, R) = (-2.00e-04, 0.61424, 1.04e-07, 3.80e-03); Program B value in [7.9430e-04, 7.9430e-04], feasible=True -> cannot PASS (red OK)
+red_Psi_low.json: float sup Lambda_G/e = 0.014291 at (s-m, e, b, R) = (-2.00e-04, 0.60195, 1.60e-07, 2.45e-03); Program B value in [1.7503e-04, 1.7503e-04], feasible=True -> cannot PASS (red OK)

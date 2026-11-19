@@ -1,0 +1,5 @@
+P: s=0.616825 e=0.61414 t=0.945053 R=0.002428 vbar=+2.975e-02
+(a) EF_lo certified (K2 set) = 3.6791e-04; with whole frontier = 3.7026e-04
+(b) a law with these moments (L1 residual 2.06e-06): atoms [0.     0.306  0.65   0.6505] weights [5.1170e-02 5.2000e-04 4.2599e-01 5.2232e-01]
+    its EF = 4.6185e-04; Var v = 5.779e-05; EF_lo with E v^2 in place of vbar^2 = 3.9197e-04
+(c) best bilinear moment bound on EF at P (grid LP, |M_ij| <= 50): 9.9567e-04 (status 0)

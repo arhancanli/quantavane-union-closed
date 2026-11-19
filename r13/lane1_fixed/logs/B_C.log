@@ -1,0 +1,6 @@
+Program B (binary64 intervals + MPFR 4.2.2) group C red=0 start Wed Nov 18 22:12:32 2026
+== C: covariance inequality (Program B)
+PASS C1 kappa-1/12-k(x)  [on [0.03,0.5] intervals=27 min lower=5.218e-05]
+PASS C2 Gcov>0 on [1/12,2/3]x[2^-16,63/64]  [boxes=1955 min lower=7.799e-08 cpu=0.2s]
+PASS C3 kappa KL - (a-x)(h(a)-h(x)) > 0  [boxes=87 min lower=6.593e-06]
+END group C red=0 ALL PASS Wed Nov 18 22:12:33 2026

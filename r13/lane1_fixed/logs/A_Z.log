@@ -1,0 +1,6 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group Z red=False start 2026-11-18 21:54:14 +0400
+== Z: edge checks for G2 (J inequality)
+PASS Z2 on [y_a, 1-z1] on [1e-06,0.99995]  [boxes=97 min lower=6.639e-07 t=0.0s]
+PASS Z4b on [y1,1] (alpha or beta on every piece)  [intervals=91]
+radius underestimates by the original code (boxes): 32
+END group Z red=False ALL PASS 2026-11-18 21:54:14 +0400

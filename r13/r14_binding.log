@@ -1,0 +1,8 @@
+red270_eps280 (theta 35, Psi 0.01537): N5 = Gamma0 - Psi - 2 eps theta = -2.474126e-04
+a0=0.21 theta=30.0: psiG=0.088756 at s-m=-2.80e-04 e=0.3850 bbar=4.962e-01 Rbar=2.150e-01 [CORNER (large Rbar, bbar)]  G0=-0.070834
+a0=0.21 theta=32.0: psiG=0.066799 at s-m=-2.63e-04 e=0.3850 bbar=5.162e-01 Rbar=2.002e-01 [CORNER (large Rbar, bbar)]  G0=-0.049997
+a0=0.21 theta=33.0: psiG=0.045862 at s-m=-2.80e-04 e=0.3855 bbar=5.159e-01 Rbar=2.019e-01 [CORNER (large Rbar, bbar)]  G0=-0.029620
+a0=0.21 theta=34.0: psiG=0.015469 at s-m=-2.80e-04 e=0.6097 bbar=8.157e-06 Rbar=2.044e-03 [contact region]  G0=+0.000214
+a0=0.21 theta=35.0: psiG=0.014971 at s-m=-2.80e-04 e=0.6062 bbar=7.938e-13 Rbar=1.804e-03 [contact region]  G0=+0.000151
+a0=0.21 theta=36.0: psiG=0.014523 at s-m=-2.80e-04 e=0.6060 bbar=1.017e-07 Rbar=1.791e-03 [contact region]  G0=+0.000039
+a0=0.21 theta=38.0: psiG=0.013690 at s-m=-2.80e-04 e=0.6026 bbar=7.479e-08 Rbar=1.571e-03 [contact region]  G0=-0.000247

@@ -1,0 +1,15 @@
+Q16 = Dic4: |G|=16 abelian=False |Aut|=32 twisted-translation perms=512 mode=sample
+   R tested 300 (e not in R: 153); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 289; avg_L(R) != avg_L(R^-1): 6; in class but avg differ: 0
+   min avg/|G|: all R 1/2 = 0.5000; R outside class: (Fraction(29, 39), 0.7435897435897436); non-coset R: (Fraction(53, 90), 0.5888888888888889)
+D8 (order 16): |G|=16 abelian=False |Aut|=32 twisted-translation perms=512 mode=sample
+   R tested 300 (e not in R: 159); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 290; avg_L(R) != avg_L(R^-1): 10; in class but avg differ: 0
+   min avg/|G|: all R 1/2 = 0.5000; R outside class: (Fraction(30, 49), 0.6122448979591837); non-coset R: (Fraction(53, 90), 0.5888888888888889)
+Z7:Z3: |G|=21 abelian=False |Aut|=42 twisted-translation perms=882 mode=sample
+   R tested 40 (e not in R: 19); step failures: 0 []
+   non-transitive frequency vectors: 0; Frankl failures: 0
+   R in class R^-1 = alpha(gRh): 15; avg_L(R) != avg_L(R^-1): 16; in class but avg differ: 0
+   min avg/|G|: all R 10/17 = 0.5882; R outside class: (Fraction(18371, 26570), 0.6914188934888973); non-coset R: (Fraction(10, 17), 0.5882352941176471)

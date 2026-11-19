@@ -1,0 +1,6 @@
+Program A red290_Psi_low.json at (s_min=0.616824740033, 0.61414, 0.0008597, 0.002428): Lambda_G - Psi e in [3.3376422e-5 +/- 4.47e-14], in domain and all 5 cuts hold: True -> cannot PASS (red OK)
+Program B red290_Psi_low.json at (s=0.6168247400332022, same e, bbar, Rbar): Lambda_G - Psi e in [3.337642e-05, 3.337642e-05], in domain and all 5 cuts hold: True -> cannot PASS (red OK)
+Program A red290_nocorner.json at (s_min=0.616824740033, 0.385, 0.4962, 0.215): Lambda_G - Psi e in [0.019801792 +/- 4.15e-10], in domain and all 4 cuts hold: True -> cannot PASS (red OK)
+Program B red290_nocorner.json at (s=0.6168247400332022, same e, bbar, Rbar): Lambda_G - Psi e in [1.980179e-02, 1.980179e-02], in domain and all 4 cuts hold: True -> cannot PASS (red OK)
+Program A red290_nocuts.json at (s_min=0.616824740033, 0.385, 0.4962, 0.215): Lambda_G - Psi e in [0.019801792 +/- 4.15e-10], in domain and all 0 cuts hold: True -> cannot PASS (red OK)
+Program B red290_nocuts.json at (s=0.6168247400332022, same e, bbar, Rbar): Lambda_G - Psi e in [1.980179e-02, 1.980179e-02], in domain and all 0 cuts hold: True -> cannot PASS (red OK)

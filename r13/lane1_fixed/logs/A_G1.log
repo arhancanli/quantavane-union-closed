@@ -1,0 +1,5 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group G1 red=False start 2026-11-18 21:54:16 +0400
+== G1: compact domain [1e-10, 1-2e-7]^2 minus corner [1-4e-05, 1]^2, contact box [0.675,0.705]^2
+PASS G1 > 0 off contact  [boxes=93845 accepted=46494 min lower=9.212e-22 t=38.8s]
+radius underestimates by the original code (boxes): 96151
+END group G1 red=False ALL PASS 2026-11-18 21:54:55 +0400

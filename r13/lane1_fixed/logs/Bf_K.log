@@ -1,0 +1,14 @@
+Program B (binary64 intervals + MPFR 4.2.2) group K red=0 start Wed Nov 18 22:52:49 2026
+== K: one-variable kernel inequalities (Program B)
+PASS H1 R''>0  [[0.66,0.72] cells=1 min f''=1.0678e+00]
+PASS K1 R>0  [on [0.15,0.99] intervals=61 min lower=3.656e-04]
+PASS H2 S1b''>0  [[0.66,0.72] cells=25 min f''=1.2277e-02]
+PASS K2 S1b>0  [on [0.005,0.995] intervals=219 min lower=7.620e-06]
+PASS H3 b''>0  [[0.66,0.72] cells=3 min f''=1.5268e-01]
+PASS K3 b>0  [on [0.002,0.99] intervals=97 min lower=9.985e-06]
+PASS K3 1-b>0  [on [0.01,0.75] intervals=5 min lower=2.551e-01]
+PASS K4 (4/5)phi+27/400-h  [on [0.01,0.99] intervals=83 min lower=3.750e-05]
+PASS K4 (6/5)phi+21/10000-h  [on [0.0002,0.9998] intervals=99 min lower=6.656e-06]
+PASS K5 h(t^2)-(809/500)t h(t)  [on [0.001,0.999] intervals=207 min lower=9.546e-07]
+PASS K6 7h/5 - sqrt(L)phi on [0.62,0.719]  [on [0.62,0.719] intervals=7 min lower=1.425e-04]
+END group K red=0 ALL PASS Wed Nov 18 22:52:49 2026

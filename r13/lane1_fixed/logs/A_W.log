@@ -1,0 +1,7 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group W red=False start 2026-11-18 21:54:14 +0400
+== W: helper one-variable inequalities
+PASS W1 (2/5)phi - omega > 0 on [0.1,0.96]  [boxes=23 min lower=2.077e-03 t=0.0s]
+PASS W2 phi - 0.032 y > 0 on [0.69,0.99996]  [boxes=5 min lower=1.468e-03 t=0.0s]
+PASS W3 (9/100)phi - v^2 > 0 on [0.001,0.9975]  [boxes=67 min lower=3.097e-04 t=0.0s]
+radius underestimates by the original code (boxes): 46
+END group W red=False ALL PASS 2026-11-18 21:54:14 +0400

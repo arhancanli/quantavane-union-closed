@@ -1,0 +1,5 @@
+it=0 nker=0: psiG=0.014863 G0=+0.000363 at s-m=-2.90e-04 e=0.6139 b=8.54e-04 R=2.41e-03; realised (resid 2.1e-06), new kernel value there 4.6468e-04
+it=1 nker=1: psiG=0.014859 G0=+0.000366 at s-m=-2.90e-04 e=0.6139 b=8.58e-04 R=2.41e-03; realised (resid 0.0e+00), new kernel value there 4.5892e-04
+it=2 nker=2: psiG=0.014197 G0=+0.001029 at s-m=-2.90e-04 e=0.6051 b=8.30e-04 R=1.60e-03; realised (resid 1.6e-04), new kernel value there 3.4289e-04
+it=3 nker=3: psiG=0.013612 G0=+0.001614 at s-m=-2.90e-04 e=0.6051 b=2.13e-03 R=1.84e-03; realised (resid 0.0e+00), new kernel value there 3.4102e-04
+it=4 nker=4: psiG=0.010843 G0=+0.004383 at s-m=-2.90e-04 e=0.5787 b=9.42e-05 R=3.87e-04; realised (resid 1.1e-04), new kernel value there 1.9446e-04

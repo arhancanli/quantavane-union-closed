@@ -1,0 +1,9 @@
+== RB: contact identities at the r-ball (value and gradient enclosures must contain 0)
+FAIL RB G1(r,r) = 0 and grad = 0 (enclosures contain 0)
+FAIL RB G2(r,r) = 0 and grad = 0 (enclosures contain 0)
+PASS RB G3(r,r) = 0 and grad = 0 (enclosures contain 0)
+PASS RB G4(r,r) = 0 and grad = 0 (enclosures contain 0)
+FAIL RB R(r) = 0 and R'(r) = 0 (enclosures contain 0)
+FAIL RB S1b(r) = 0 and S1b'(r) = 0 (enclosures contain 0)
+PASS RB b(r) = 0 and b'(r) = 0 (enclosures contain 0)
+PASS H4 G1 Hessian positive definite on [0.675,0.705]^2 (24^2 cells)  [min lower det = 6.4015e-02]

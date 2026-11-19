@@ -1,0 +1,4 @@
+Program B (binary64 intervals + MPFR 4.2.2) group G2 red=0 start Wed Nov 18 22:54:39 2026
+== G2 on [1e-10,1-2e-7]^2 minus [1-5e-05,1]^2, contact [0.675,0.705]^2 (Program B)
+PASS G2 > 0 off contact  [boxes=913875 min lower=3.783e-15 cpu=295.1s]
+END group G2 red=0 ALL PASS Wed Nov 18 23:01:35 2026

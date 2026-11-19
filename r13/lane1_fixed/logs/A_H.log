@@ -1,0 +1,16 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group H red=False start 2026-11-18 21:54:14 +0400
+== RB: contact identities at the r-ball (value and gradient enclosures must contain 0)
+PASS RB G1(r,r) = 0 and grad = 0 (enclosures contain 0)
+PASS RB G2(r,r) = 0 and grad = 0 (enclosures contain 0)
+PASS RB G3(r,r) = 0 and grad = 0 (enclosures contain 0)
+PASS RB G4(r,r) = 0 and grad = 0 (enclosures contain 0)
+PASS RB R(r) = 0 and R'(r) = 0 (enclosures contain 0)
+PASS RB S1b(r) = 0 and S1b'(r) = 0 (enclosures contain 0)
+PASS RB b(r) = 0 and b'(r) = 0 (enclosures contain 0)
+== H: Hessians at the contact for the two-variable inequalities
+PASS H4 G1 Hessian positive definite on [0.675,0.705]^2 (24^2 cells)  [min lower det = 6.4015e-02]
+PASS H5 G2 Hessian positive definite on [0.675,0.705]^2 (24^2 cells)  [min lower det = 1.3980e+00]
+PASS H6 G3 Hessian positive definite on [0.675,0.705]^2 (24^2 cells)  [min lower det = 1.1264e-04]
+PASS H7 G4 Hessian positive definite on [0.675,0.705]^2 (24^2 cells)  [min lower det = 1.8789e-01]
+radius underestimates by the original code (boxes): 0
+END group H red=False ALL PASS 2026-11-18 21:54:15 +0400

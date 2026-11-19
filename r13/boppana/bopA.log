@@ -1,0 +1,3 @@
+c = 809/500 = 1.618; edge constants: left [0.1411750110 +/- 4.75e-11] (must be > 0), right [0.5131346269 +/- 3.79e-11] (must be > 0)
+middle: PASS (7607 intervals); edges PASS
+RESULT: PASS

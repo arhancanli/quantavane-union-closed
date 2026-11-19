@@ -1,0 +1,11 @@
+D 0.290088 t0 0.073792999 e* 0.55232663 a* 0.99971873 d0 -0.012509221
+JB params a0=19/100 mu=14/5: eta 0.460654846537 W 0.288324007081 Gamma0 0.0332055490313 B' 0.113268919745
+min over grid of l_G(delta_s) - Gamma0 h(s) = 0.011001644 at eps,a0,mu = ['0.00029', '0.03', '0.0']
+eps=0.00029: C(delta_s)=0.00118171  g=0.0015677523  l_G-Gamma0*e (JB params)=0.018372573
+eps=0.0012: C(delta_s)=5.74476e-6  g=0.0016042136  l_G-Gamma0*e (JB params)=0.021775626
+eps=0.001205: C(delta_s)=-7.19899e-7  g=0.0016044149  l_G-Gamma0*e (JB params)=0.021794338
+eps=0.0 per coordinate: h(s)-h(s^2) = 0.000989668;  d(s^2||s) = 0.113773;  2 eps h(s) = 0.0;  X0/n = -0.112783
+   cross-entropy -E log mu(AuB)/n = 0.778242 vs H/n = 0.66545895 (uniform measures: equal)
+eps=0.001205 per coordinate: h(s)-h(s^2) = 0.00228858;  d(s^2||s) = 0.114;  2 eps h(s) = 0.00160513;  X0/n = -0.111711
+   cross-entropy -E log mu(AuB)/n = 0.77774242 vs H/n = 0.66603105 (uniform measures: equal)
+g(delta_m) = 0.001556208  g/(2h(m)) = 0.0011692742  C at eps=1.2e-3 is listed above

@@ -1,0 +1,10 @@
+== RB: contact identities at the r-ball (Program B)
+FAIL RB G1  [value and gradient contain 0]
+FAIL RB G2  [value and gradient contain 0]
+PASS RB G3  [value and gradient contain 0]
+PASS RB G4  [value and gradient contain 0]
+FAIL RB R  [value and derivative contain 0]
+FAIL RB S1b  [value and derivative contain 0]
+PASS RB b  [value and derivative contain 0]
+PASS H4 G1  [[0.675,0.705]^2 cells=256 min det lower=4.7104e-02]
+PASS H5 G2  [[0.675,0.705]^2 cells=256 min det lower=1.1437e+00]

@@ -1,0 +1,4 @@
+rational cuts+cuts6: eps=2.950e-04 a0=0.19 theta=30.0: psiG=0.0149953 G0=+0.000510 at s-m=-2.95e-04 e=0.61269 b=1.229e-03 R=2.883e-03
+rational cuts+cuts6: eps=2.950e-04 a0=0.19 theta=31.0: psiG=0.0143922 G0=+0.000523 at s-m=-2.95e-04 e=0.61030 b=1.133e-03 R=2.637e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.19 theta=30.0: psiG=0.0150123 G0=+0.000193 at s-m=-3.00e-04 e=0.61391 b=1.258e-03 R=2.969e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.19 theta=31.0: psiG=0.0144019 G0=+0.000204 at s-m=-3.00e-04 e=0.60784 b=1.204e-03 R=2.713e-03

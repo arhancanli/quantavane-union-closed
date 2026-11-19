@@ -1,0 +1,114 @@
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{question}{Question}
+\newcommand{\Int}{\operatorname{Int}}
+\newcommand{\avg}{\operatorname{avg}}
+\title{Unions of translates in finite groups and the union-closed sets conjecture}
+\author{Arhan Canli}
+\date{Draft, 19 November 2026. Not yet peer reviewed.}
+\begin{document}
+\begin{abstract}
+For a finite group $G$ and a nonempty $R\subseteq G$, let $\mathcal F_L(R)=\{AR: A\subseteq G\}$ be the union-closed family of all
+unions of left translates $gR$. Aaronson, Ellis and Leader proved that for abelian $G$ the average size of a member of
+$\mathcal F_L(R)$ is at least $|G|/2$, so the union-closed sets conjecture holds for these families. For arbitrary finite groups we
+show the reciprocity $\avg \mathcal F_L(R)+\avg \mathcal F_L(R^{-1})\ge |G|$, with equality exactly when $R$ is a right coset of a
+subgroup. This is a quantitative form, for translate families, of the duality of Johnson and Vaughan. Consequently the conjecture
+holds for $\mathcal F_L(R)$ whenever $R^{-1}=\alpha(gRh)$ for an automorphism $\alpha$ and $g,h\in G$. The general non-abelian case
+remains open; exhaustive computation in several groups of order at most $27$ supports it.
+\end{abstract}
+\maketitle
+
+\section{Setting}
+Let $G$ be a finite group and $\emptyset\ne R\subseteq G$. Put $\mathcal F_L(R)=\{AR:A\subseteq G\}$; it is closed under unions and
+contains $\emptyset$. Left multiplication by $G$ permutes $\mathcal F_L(R)$ and acts transitively on $G$, so every element of $G$
+lies in the same number of members, namely $|\mathcal F_L(R)|\cdot\avg\mathcal F_L(R)/|G|$, where $\avg\mathcal F$ is the average
+size of a member. Hence the union-closed sets conjecture holds for $\mathcal F_L(R)$ if and only if $\avg\mathcal F_L(R)\ge|G|/2$.
+For $S\subseteq G$ let $\Int(S)=\{x\in G: xR\subseteq S\}$.
+
+Aaronson, Ellis and Leader \cite{AEL} proved $\avg\mathcal F_L(R)\ge |G|/2$ for abelian $G$, via the map
+$S\mapsto -(G\setminus\Int(S))$. They remark that a slightly weaker statement follows from Theorem 2.10 of Johnson and Vaughan
+\cite{JV}, who attach to every union-closed family a dual family (with the dual lattice) and show that the conjecture holds for
+at least one of the two.
+
+\section{Reciprocity}
+\begin{lemma}\label{lem:basic}
+For every $S\subseteq G$: (a) $G\setminus\Int(S)=(G\setminus S)R^{-1}$; (b) $|\Int(S)|\le|S|$; (c) if $S\in\mathcal F_L(R)$ then
+$S=\Int(S)R$.
+\end{lemma}
+\begin{proof}
+(a) $x\notin\Int(S)$ iff $xr\notin S$ for some $r\in R$ iff $x\in(G\setminus S)R^{-1}$. (b) For any fixed $r\in R$, $x\mapsto xr$
+injects $\Int(S)$ into $S$. (c) $\Int(S)R\subseteq S$ by definition; if $S=AR$ then $A\subseteq\Int(S)$, so $S\subseteq\Int(S)R$.
+\end{proof}
+
+\begin{theorem}\label{thm:recip}
+The map $\varphi(S)=G\setminus\Int(S)$ is an order-reversing bijection $\mathcal F_L(R)\to\mathcal F_L(R^{-1})$ with
+$|S|+|\varphi(S)|\ge|G|$. Consequently $|\mathcal F_L(R)|=|\mathcal F_L(R^{-1})|$ and
+\[\avg\mathcal F_L(R)+\avg\mathcal F_L(R^{-1})\ \ge\ |G|,\]
+with equality if and only if $R$ is a right coset $Hr_0$ of a subgroup $H\le G$.
+\end{theorem}
+\begin{proof}
+By Lemma~\ref{lem:basic}(a), $\varphi(S)$ is a union of left translates of $R^{-1}$. The same construction for $R^{-1}$ gives
+$\psi(T)=G\setminus\{x:xR^{-1}\subseteq T\}=(G\setminus T)R$, and for $S\in\mathcal F_L(R)$,
+$\psi(\varphi(S))=\Int(S)R=S$ by Lemma~\ref{lem:basic}(c); symmetrically $\varphi\psi=\mathrm{id}$ on $\mathcal F_L(R^{-1})$. So
+$\varphi$ is a bijection; it reverses inclusion because $\Int$ is monotone. By Lemma~\ref{lem:basic}(b),
+$|S|+|\varphi(S)|=|G|+|S|-|\Int(S)|\ge|G|$. Averaging over $S\in\mathcal F_L(R)$ gives the inequality.
+
+Equality holds iff $|\Int(S)|=|S|$ for every $S\in\mathcal F_L(R)$. Translating $R$ on the right does not change averages
+($\mathcal F_L(Rh)=\mathcal F_L(R)h$), so assume $1\in R$. Take $S=R$: then $\Int(R)=\{x: xR\subseteq R\}=\{x:xR=R\}$ is the left
+stabiliser $H$ of $R$, a subgroup, and $HR=R$, so $R$ is a union of right cosets of $H$; $|\Int(R)|=|R|$ forces $R=H$. Conversely, if
+$R=H$ is a subgroup, every member of $\mathcal F_L(R)$ is a union of left cosets of $H$, so $\Int(S)=S$, and $\mathcal F_L(R)$ is
+the power set of $G/H$; its average size is $|G|/2$.
+\end{proof}
+
+\begin{corollary}\label{cor:selfdual}
+If $R^{-1}=\alpha(gRh)$ for an automorphism $\alpha$ of $G$ and $g,h\in G$, then $\avg\mathcal F_L(R)\ge|G|/2$, and the union-closed
+sets conjecture holds for $\mathcal F_L(R)$.
+\end{corollary}
+\begin{proof}
+$\mathcal F_L(gRh)=\mathcal F_L(R)h$ (since $A(gR)h=(Ag)Rh$) and $\mathcal F_L(\alpha(R'))=\alpha(\mathcal F_L(R'))$; both maps
+preserve sizes, so $\avg\mathcal F_L(R^{-1})=\avg\mathcal F_L(R)$, and Theorem~\ref{thm:recip} applies.
+\end{proof}
+This covers abelian $G$ (with $\alpha(x)=x^{-1}$, the theorem of \cite{AEL}), symmetric sets $R=R^{-1}$, and every $R$ in groups where
+inversion maps each subset into the orbit of its two-sided translates under $\mathrm{Aut}(G)$.
+
+\begin{proposition}\label{prop:equiv}
+The following are equivalent: (i) $\avg\mathcal F_L(R)\ge|G|/2$; (ii) a uniformly random member of $\mathcal F_L(R^{-1})$ contains
+$R^{-1}$ with probability at most $1/2$; (iii) the average of $|\{x: xR^{-1}\subseteq T\}|$ over $T\in\mathcal F_L(R^{-1})$ is at
+most $|G|/2$.
+\end{proposition}
+\begin{proof}
+For $T=\varphi(S)$, $\{x:xR^{-1}\subseteq T\}=G\setminus S$ (apply Lemma~\ref{lem:basic}(a) to $R^{-1}$ and use $\psi\varphi=\mathrm
+{id}$), so $|S|=|G|-|\{x:xR^{-1}\subseteq T\}|$; this gives (i)$\Leftrightarrow$(iii). By transitivity, the average in (iii) equals
+$|G|\cdot\Pr(1\in\{x:xR^{-1}\subseteq T\})=|G|\cdot\Pr(R^{-1}\subseteq T)$, giving (ii).
+\end{proof}
+
+\section{Computations and the open case}
+Exact integer computations (the referee's implementation for the exhaustive small groups and the samples, ours for the dihedral runs): in $S_3,D_4,Q_8,D_5$ every $R$ satisfies the hypothesis of
+Corollary~\ref{cor:selfdual}; in $A_4$, $\mathrm{Dic}_3$ and $D_6$ respectively $768$, $144$ and $144$ of the $4095$ nonempty $R$ do
+not. Over about $7{,}500$ subsets in groups of order at most $24$ (exhaustive in the groups above, sampled in $Q_{16}$, $D_8$,
+$C_7\rtimes C_3$) and exhaustive $|R|\le4$ in $D_7,\dots,D_{11}$, the inequality $\avg\mathcal F_L(R)\ge|G|/2$ held in every case,
+with equality only for cosets; the smallest ratio for $R$ outside the corollary is $\avg/|G|=6/11$ in $A_4$. Groups of order at most
+$12$ give no new evidence for the conjecture itself, which is known for ground sets of size at most $12$.
+\begin{question}
+Is $\avg\mathcal F_L(R)\ge|G|/2$ for every finite group $G$ and every nonempty $R\subseteq G$?
+\end{question}
+A positive answer would settle the union-closed sets conjecture for all families generated by a single orbit of a regular group
+action.
+
+\subsection*{Authorship and the role of AI}
+The argument, the programs and this draft were produced by AI agents (Claude, by Anthropic) working for Quantavane under
+the author's direction; the author takes responsibility for the results. No mathematician outside Quantavane has reviewed this note.
+
+\begin{thebibliography}{9}
+\bibitem{AEL} J. Aaronson, D. Ellis and I. Leader, A note on transitive union-closed families, Electron. J. Combin. 28(2) (2021);
+arXiv:2010.08795.
+\bibitem{JV} R. T. Johnson and T. P. Vaughan, On union-closed families, I, J. Combin. Theory Ser. A 84 (1998), 242--249.
+\bibitem{BS} H. Bruhn and O. Schaudt, The journey of the union-closed sets conjecture, Graphs Combin. 31 (2015); arXiv:1309.3297.
+\end{thebibliography}
+\end{document}

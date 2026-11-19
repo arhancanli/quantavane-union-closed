@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these proofs, certificates or programs, please cite them as below, together with Sadhu-Ursin and Costa-Sadhu (see README.md)."
+type: dataset
+title: "Union-closed families: c_UC >= c* + 2.9e-4, a barrier for the method, and unions of translates"
+abstract: "A computer-assisted proof that every finite union-closed family with a nonempty member has an element in more than a proportion c* + 29/100000 = 0.38317525996679779... of its members, with two separately written certifying programs and red controls; a product-measure barrier for the method at c* + 1.205e-3; and a reciprocity for unions of translates in finite groups. Internally refereed; not yet peer reviewed."
+authors:
+  - family-names: Canli
+    given-names: Arhan
+    affiliation: Quantavane
+    email: arhan@quantavane.com
+license: CC-BY-4.0
+url: "https://quantavane.com"
+repository-code: "https://github.com/arhancanli/quantavane-union-closed"
+keywords:
+  - union-closed sets conjecture
+  - Frankl's conjecture
+  - entropy method
+  - interval arithmetic

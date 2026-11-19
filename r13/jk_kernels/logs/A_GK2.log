@@ -1,0 +1,8 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group GK2 red=False start 2026-11-18 23:10:56 +0400
+== GK2: joint kernel F >= (3/20)[v^2 phi + phi v^2] + (51/2000)[phi R + R phi]
+PASS GK2 edge reduction: kappa_K = qL - 2k - (9/50)a >= kappa4 (so lane 1's X0, X1, K11 edge sets apply)  [[0.08435550371205012606135383240344310 +/- 7.58e-36]]
+PASS RB GK2(r,r) = 0 and grad = 0 (enclosures contain 0)
+PASS HK2 GK2 Hessian positive definite on [0.675,0.705]^2 (24^2 cells)  [min lower det = 1.7517e-04]
+PASS GK2 > 0 off contact  [boxes=71299 accepted=35116 min lower=3.631e-21 t=48.5s]
+radius underestimates by the original code (boxes): 74035
+END group GK2 red=False ALL PASS 2026-11-18 23:11:45 +0400

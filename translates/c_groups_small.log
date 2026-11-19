@@ -1,0 +1,10 @@
+D7 |G|=14 |R|=3: tested 78, skipped 0; min avg/|G| = 0.633333 at ((1, 3), 900); min above 1/2 = 0.633333 at ((1, 3), 900); min avg_L(R)+avg_L(R^-1)-|G| = 3.7333
+D7 |G|=14 |R|=4: tested 286, skipped 0; min avg/|G| = 0.588235 at ((1, 2, 4), 51); min above 1/2 = 0.588235 at ((1, 2, 4), 51); min avg_L(R)+avg_L(R^-1)-|G| = 2.4706
+D8 |G|=16 |R|=3: tested 105, skipped 0; min avg/|G| = 0.630435 at ((1, 3), 2116); min above 1/2 = 0.630435 at ((1, 3), 2116); min avg_L(R)+avg_L(R^-1)-|G| = 4.1739
+D8 |G|=16 |R|=4: tested 455, skipped 0; min avg/|G| = 0.500000 at ((2, 10, 15), 16); min above 1/2 = 0.588889 at ((1, 2, 4), 90); min avg_L(R)+avg_L(R^-1)-|G| = 0.0000
+D9 |G|=18 |R|=3: tested 136, skipped 0; min avg/|G| = 0.500000 at ((6, 17), 64); min above 1/2 = 0.635135 at ((1, 3), 5476); min avg_L(R)+avg_L(R^-1)-|G| = 0.0000
+D9 |G|=18 |R|=4: tested 680, skipped 0; min avg/|G| = 0.588608 at ((1, 2, 4), 158); min above 1/2 = 0.588608 at ((1, 2, 4), 158); min avg_L(R)+avg_L(R^-1)-|G| = 3.1899
+D10 |G|=20 |R|=3: tested 171, skipped 0; min avg/|G| = 0.638173 at ((1, 2), 15126); min above 1/2 = 0.638173 at ((1, 2), 15126); min avg_L(R)+avg_L(R^-1)-|G| = 5.5269
+D10 |G|=20 |R|=4: tested 969, skipped 0; min avg/|G| = 0.500000 at ((2, 14, 19), 32); min above 1/2 = 0.588235 at ((1, 14, 18), 289); min avg_L(R)+avg_L(R^-1)-|G| = 0.0000
+D11 |G|=22 |R|=3: tested 210, skipped 0; min avg/|G| = 0.638200 at ((1, 2), 39602); min above 1/2 = 0.638200 at ((1, 2), 39602); min avg_L(R)+avg_L(R^-1)-|G| = 6.0808
+D11 |G|=22 |R|=4: tested 1330, skipped 0; min avg/|G| = 0.588477 at ((1, 2, 4), 486); min above 1/2 = 0.588477 at ((1, 2, 4), 486); min avg_L(R)+avg_L(R^-1)-|G| = 3.8930

@@ -1,0 +1,7 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group C red=False start 2026-11-18 21:54:14 +0400
+== C: covariance inequality (paper Prop S4)
+PASS C1 kappa - 1/12 - k(x) > 0 on [0.03,0.5]  [boxes=33 min lower=9.480e-05 t=0.0s]
+PASS C2 Gcov>0 on [1/12,2/3]x[2^-16,63/64]  [boxes=1989 accepted=995 min lower=2.469e-10 t=0.3s]
+PASS C3 kappa KL - (a-x)(h(a)-h(x)) > 0 on {2/3<=a<=9/10, x<=1-a}  [boxes=91 min lower=1.884e-04]
+radius underestimates by the original code (boxes): 2096
+END group C red=False ALL PASS 2026-11-18 21:54:14 +0400

@@ -1,0 +1,5 @@
+Program B (binary64 intervals + MPFR 4.2.2) group Z red=0 start Wed Nov 18 22:52:49 2026
+== Z: edge checks for G2 (Program B)
+PASS Z2 on [1e-6, 1-5e-5]  [on [1e-06,0.99995] intervals=69 min lower=8.039e-07]
+PASS Z4b on [1e-3,1] (alpha or beta)  [intervals=91]
+END group Z red=0 ALL PASS Wed Nov 18 22:52:49 2026

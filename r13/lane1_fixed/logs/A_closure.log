@@ -1,0 +1,27 @@
+PASS K1 small at 3/20*(1+e)
+PASS K1/K3b/K4a near 1 at a=(1/100)(1+e)
+PASS K2 small at (1/200)(1+e)
+PASS K2 near 1 at (1/200)(1+e)
+PASS K3 small at (1/500)(1+e)
+PASS K3 near 1 at (1/100)(1+e)
+PASS K3 1-b small at (1/100)(1+e)
+PASS K4a at (1/100)(1+e)
+PASS K4b at (1/5000)(1+e)
+PASS W1 small at (1/10)(1+e)
+PASS W1 near 1 at (1/25)(1+e)
+PASS W3 small at (1/1000)(1+e)
+PASS K11 at beta(1+e) (closes corner and W2/X1 slivers)
+PASS X1 at delta1(1+e)
+PASS X0 at delta0(1+e)
+PASS Z3 at delta1(1+e)
+PASS Z4a at y1(1+e)
+Z2 B&B with delta1(1+e): rerun below; Z4b with delta0'(1+e): rerun below
+---- contact identities at the r-ball (value and gradient must contain 0)
+PASS contact G1: value and gradient contain 0
+PASS contact G2: value and gradient contain 0
+PASS contact G3: value and gradient contain 0
+PASS contact G4: value and gradient contain 0
+PASS contact R: value and derivative contain 0
+PASS contact S1b: value and derivative contain 0
+PASS contact b: value and derivative contain 0
+ALL EDGE CLOSURES PASS

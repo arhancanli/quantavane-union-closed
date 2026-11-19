@@ -1,0 +1,9 @@
+== red270 eps280 (N5)
+N5: FAIL: N5 FAIL [-0.00024741262431380015832778664138806482213216195988033248331439849121, -0.0002474126243138001583277866413880648221321619588790398825600641678] [0.0s]
+== red270 noPhi (N4)
+N4: FAIL: N4 FAIL box ((0.38499999999861756, 0.385), (0.7503266708499723, 0.7503266708517913), (0.6229250847348233, 0.6229250847349105)) upper 4.3992587350771834e-14 [2.6s]
+red270_Psi_low.json: float sup Lambda_G/e = 0.014925 at (s-m, e, b, R) = (-2.70e-04, 0.60635, 1.37e-16, 1.81e-03); Program B value in [7.5848e-05, 7.5848e-05], feasible=True -> cannot PASS (red OK)
+red270_noK2.json: float sup Lambda_G/e = 0.018524 at (s-m, e, b, R) = (-2.70e-04, 0.62232, 3.44e-08, 4.86e-03); Program B value in [1.9629e-03, 1.9629e-03], feasible=True -> cannot PASS (red OK)
+red270_theta32.json: float sup Lambda_G/e = 0.068262 at (s-m, e, b, R) = (-2.70e-04, 0.38504, 5.16e-01, 2.02e-01); Program B value in [2.0366e-02, 2.0366e-02], feasible=False -> no conclusion
+red270_theta32.json at Program A's failing box centre: Program B value in [-9.5573e-12, -9.5468e-12], feasible=False -> no conclusion
+red270_theta32.json: best feasible point (s,e,b,R) = (0.6168447400332019, 0.38500000100000004, 0.515, 0.2149): Program B lower value 2.1587e-02 -> cannot PASS (red OK)

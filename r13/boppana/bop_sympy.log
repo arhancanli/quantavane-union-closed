@@ -1,0 +1,6 @@
+f''' - p/(x(1-x^2)^2) simplifies to: 0
+roots of p (numeric): [-3.39636338499, 0.189099277686, 0.735128152301]
+p(0) = -0.763932022500 ; leading coefficient -phi < 0
+f(1/phi) = 0  f'(1/phi) = -0.e-138
+f(1-) limit = 0  f(0+) = 0  f'(0+) = 0
+f''(1/phi) = 0.283589850089031 (> 0 means a double root that is a local minimum)

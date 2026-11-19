@@ -1,0 +1,9 @@
+rational cuts+cuts6: eps=3.000e-04 a0=0.17 theta=29.5: psiG=0.0137346 G0=+0.000175 at s-m=-3.00e-04 e=0.61206 b=1.345e-03 R=3.111e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.17 theta=30.0: psiG=0.0134553 G0=+0.000154 at s-m=-3.00e-04 e=0.60511 b=1.140e-03 R=2.480e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.17 theta=30.5: psiG=0.0132047 G0=+0.000105 at s-m=-3.00e-04 e=0.60511 b=1.141e-03 R=2.483e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.18 theta=29.5: psiG=0.0145358 G0=+0.000183 at s-m=-3.00e-04 e=0.61261 b=1.353e-03 R=3.140e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.18 theta=30.0: psiG=0.0142204 G0=+0.000198 at s-m=-3.00e-04 e=0.61071 b=1.319e-03 R=3.020e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.18 theta=30.5: psiG=0.0139050 G0=+0.000213 at s-m=-3.00e-04 e=0.60511 b=1.140e-03 R=2.480e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.19 theta=29.5: psiG=0.0153409 G0=+0.000165 at s-m=-3.00e-04 e=0.61411 b=1.362e-03 R=3.205e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.19 theta=30.0: psiG=0.0150123 G0=+0.000193 at s-m=-3.00e-04 e=0.61391 b=1.258e-03 R=2.969e-03
+rational cuts+cuts6: eps=3.000e-04 a0=0.19 theta=30.5: psiG=0.0147102 G0=+0.000195 at s-m=-3.00e-04 e=0.61260 b=1.217e-03 R=2.856e-03

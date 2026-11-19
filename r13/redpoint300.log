@@ -1,0 +1,8 @@
+N7: FAIL: N7[0]: FAIL near x = 0.651750734543512 [1.5s]
+Program B red300_cut6bad.json 6-cut 0 at x0 = 0.0: alpha . g6 in [-1.000000e-06, -1.000000e-06] -> cannot PASS (red OK)
+N5: FAIL: N5 FAIL [-0.000246666879368965294160969026603302249 +/- 3.54e-40] [0.0s]
+N5: FAIL: N5 FAIL [-0.00024666687936896529416096902660330224914670586364073964026011809136, -0.00024666687936896529416096902660330224914670586265019481524556724003] [0.0s]
+Program A red300_Psi_low.json at (s_min=0.616814740033, 0.60511, 0.00114, 0.00248): Lambda_G - Psi e in [6.3439270e-5 +/- 1.16e-13], in domain and all 5 cuts hold: True -> cannot PASS (red OK)
+Program B red300_Psi_low.json at (s=0.6168147400332022, same e, bbar, Rbar): Lambda_G - Psi e in [6.343927e-05, 6.343927e-05], in domain and all 5 cuts hold: True -> cannot PASS (red OK)
+Program A red300_nocuts6.json at (s_min=0.616814740033, 0.60623, 0.0006635, 0.001845): Lambda_G - Psi e in [0.00020867127 +/- 2.87e-12], in domain and all 5 cuts hold: True -> cannot PASS (red OK)
+Program B red300_nocuts6.json at (s=0.6168147400332022, same e, bbar, Rbar): Lambda_G - Psi e in [2.086713e-04, 2.086713e-04], in domain and all 5 cuts hold: True -> cannot PASS (red OK)

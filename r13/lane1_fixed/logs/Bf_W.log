@@ -1,0 +1,6 @@
+Program B (binary64 intervals + MPFR 4.2.2) group W red=0 start Wed Nov 18 22:52:49 2026
+== W: helper inequalities (Program B)
+PASS W1 (2/5)phi-omega  [on [0.1,0.96] intervals=29 min lower=2.524e-04]
+PASS W2 phi-0.032y  [on [0.69,0.99996] intervals=13 min lower=2.766e-04]
+PASS W3 (9/100)phi-v^2  [on [0.001,0.9975] intervals=61 min lower=1.666e-04]
+END group W red=0 ALL PASS Wed Nov 18 22:52:49 2026

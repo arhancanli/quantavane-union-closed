@@ -1,0 +1,56 @@
+Program A (Arb, python-flint 0.7.1, prec 128) group SC red=False start 2026-11-18 21:54:13 +0400
+== SC0: constants and sign conditions (paper Sections 2-7)
+PASS r bracket width < 1e-30  [[0.69090773872540775455726111650464292 +/- 6.09e-36]]
+PASS 0 < tau < 1/2  [[0.496574767511534406183930447037103 +/- 2.81e-34]]
+PASS q > 5/22  [[0.23422948006640440688359088959418040 +/- 7.39e-36]]
+PASS 44 qL > 1
+PASS c > 0, p < 0
+PASS constant alpha>0
+PASS constant b_m>0
+PASS constant D>0
+PASS constant D<kappa
+PASS constant e*>z
+PASS constant k_c>0
+PASS constant D0>0
+PASS constant k_h+m>0
+PASS constant Btot>0
+PASS constant Btot<A0
+PASS constant 2(m-eps)>lambda
+PASS constant Gamma>25q/2
+PASS constant df/ds>0
+PASS constant tmin>0
+PASS constant W>0
+PASS constant eta>0
+PASS constant G empty case: lambda-2 Gamma eps>1
+PASS constant e1>0
+== SC1: edge scalar conditions (EDGE_LEMMAS.md)
+PASS K1 small: sqrt(2 log(20/3)/L) > rho0
+PASS K1 near 1: h(1/100) < (qL)^2/(r^2 L)
+PASS K2 small: (hr/|p|-r) ell + (1-hr^2/|p|) sqrt(2ell/L) - rho0 > 0, coefficient hr/|p|-r>0
+PASS K2 near 1: sqrt(h(1/200)) < (1-hr^2/|p|)/(kp sqrt L)
+PASS K3 small: 1 + ell/|p| - c Phiu(ell) > 0 and derivative > 0 at ell(1/500)
+PASS K3 near 1: 1 - 1/100 - c sqrt(h(1/50)/L) > 0
+PASS K3 1-b small: 1 - 1/100 - h(1/100)/|p| > 0
+PASS K3 1-b near 1: sqrt(L) < c|p|/sqrt(L)
+PASS K4 h(1/100) < 27/400
+PASS K4 h(1/5000) < 21/10000
+PASS W1 small: (2/5) sqrt(2 log 10 / L) > 1
+PASS W1 near 1: h(1/25) <= 4/(25L)
+PASS W2 small: sqrt(2 log(100/69)/L) > 0.032 and 69/100 < r
+PASS W3 small: x(ell+1)^2/sqrt(2ell/L) <= 9/100 and hr^2 phi(1/1000) <= 9/100 (x(ell+1)^2/sqrt(2ell/L) increasing)
+PASS W3 near 1: sqrt(L) h(1/400)^1.5 <= 9/100 and hr^2 sqrt(h(1/200)/L) <= 9/100
+PASS reduction: kappa4 < qL - 1/10 < qL - 99/2500, kappa4 > 0
+PASS X0: kappa4 sqrt(2 log(1e10)/L) >= 2/5
+PASS X1: h(2e-7) <= (0.032 kappa4)^2 / L
+PASS K11: kappa4 (2-(1+tau)beta) log(1/(2beta))/L >= 2L
+PASS Z1: h(5e-5) <= (qL/(11 r))^2 / L
+PASS Z3: bound at ell(y_a) > 0 and 1-delta1-Phi1/(5|p|) > 0  [[1.566156386200587107856389583110269 +/- 2.48e-34]]
+PASS Z4a: (11/50) rho1 - beta1/5 > 0  [[0.10768407818869261978493550113338454 +/- 6.61e-36]]
+PASS Z4: (1+tau) x^2 <= 1/2 and 3x/2 <= 1/e at x = 1e-10
+PASS C1 small x: (6/100) log(100/3) < kappa - 1/12
+PASS C2 x<=d: delta(1/12 - d) - (kappa - 1/12 + d) h(d) > 0
+PASS C2 x>=63/64: kappa (3/2) h(2/3)(63/64) - delta 11/12 - (1+kappa) h(1/64) > 0
+PASS C4: h(9/10) <= kappa (4/5) log 9
+PASS K5 Boppana: 809/500 < (1+sqrt5)/2
+radius underestimates by the original code (boxes): 0
+END group SC red=False ALL PASS 2026-11-18 21:54:13 +0400
