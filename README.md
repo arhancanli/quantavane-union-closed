@@ -1,4 +1,4 @@
-# Union-closed families: c_UC ≥ c* + 2.9·10⁻⁴, a barrier for the method, and unions of translates
+# Union-closed families: c_UC ≥ c* + 3.0·10⁻⁴, a barrier for the method, and unions of translates
 
 **Status: verified by two independent programs and an internal referee; not yet peer reviewed.**
 
@@ -11,11 +11,11 @@ A finite family of sets is union-closed if the union of any two members is a mem
 conjecture says that every finite union-closed family with a nonempty member has an element in at least half of its
 members. Let c_UC be the largest constant for which "at least a proportion c_UC" is true.
 
-**Theorem.** c_UC ≥ c* + 29/100000 = 0.38317525996679779…, where c* = 0.38288525996679… is the limit of the
+**Theorem.** c_UC ≥ c* + 3/10000 = 0.38318525996679779…, where c* = 0.38288525996679… is the limit of the
 single-coordinate entropy method (Costa and Sadhu).
 
-This is 2.9·10⁻⁴ above the bound 0.3828852549667978 of Costa and Sadhu (arXiv:2610.02295). The proof is
-computer-assisted: `r13/SELF_CONTAINED.md` (v4) is the complete proof, with every finite inequality reduced to checks
+This is 3.0·10⁻⁴ above the bound 0.3828852549667978 of Costa and Sadhu (arXiv:2610.02295). The proof is
+computer-assisted: `r13/SELF_CONTAINED.md` (v5) is the complete proof, with every finite inequality reduced to checks
 that two programs certify.
 
 ## The earlier work this builds on
@@ -33,21 +33,25 @@ that two programs certify.
 
 New here: one shared gap budget with per-law losses in one random order (Theorem 6.2), the Cauchy–Schwarz fibre bound
 for removed coordinates (Lemma 6.1), Lemma 3.2(d), the joint kernel input (I9) and its certificate, the moment-hull
-cuts (Lemma 6.4) and the finite inequalities N1–N6.
+cuts (Lemma 6.4), the Jensen-free kernel bounds (Lemma 6.5) and the finite inequalities N1–N7. The previous version
+(c* + 2.9·10⁻⁴, proof v4, without Lemma 6.5) is commit 41a2e8f of this repository; its programs and parameter file
+(`r13/certA_cut.py`, `r13/certB_cut.py`, `r13/params_e290.json`) are still here.
 
 ## Checking it: one command
 
-    PYTHON=/path/to/python sh check.sh          # Python with python-flint and mpmath; about 15-30 minutes
-    PYTHON=/path/to/python sh check.sh full     # also Program B on N4 and N3, about 3 hours
+    PYTHON=/path/to/python sh check.sh          # Python with python-flint and mpmath; about 1.5-2 hours
+    PYTHON=/path/to/python sh check.sh full     # also Program B on N4 and N3, about 16-18 hours
 
-- **Program A** (`r13/certA_cut.py`, python-flint/Arb) and **Program B** (`r13/certB_cut.py`, binary64 intervals
-  widened outward plus mpmath.iv), written separately, certify N1–N6 for `r13/params_e290.json`. Recorded counts
-  (fresh clone at the lab's commit 1e2a13c2): N5 margin 9.5549·10⁻⁵; N1 757; N2 38,814; N6 232,393; N4 3,540,481 (A),
-  3,538,273 (B); N3 11,092,699 boxes (A), 59,190,707 (B); all PASS (`r13/certA_e290.log`,
-  `r13/fresh_clone/fresh_certA_e290.log`, `r13/fresh_clone/fresh_certB_e290.log`; hashes `r13/hashes_e285_e290.txt`).
-- **Red controls** (each must fail): eps = 2.95·10⁻⁴ fails N5 in both programs (run by `check.sh`); Ψ below its float
-  supremum and the cut set removed are refused as point controls in both programs (`r13/redpoint290.log`); earlier
-  parameter sets have their own controls (Section 8 of the proof).
+- **Program A** (`r13/certA_v2.py`, python-flint/Arb) and **Program B** (`r13/certB_v2.py`, binary64 intervals
+  widened outward plus mpmath.iv), written separately, certify N1–N7 for `r13/params_r15_e300.json`. Recorded counts
+  (fresh clone at the lab's commit 9ddf4556): N5 margin 5.8333·10⁻⁵; N1 757; N2 38,814; N6 232,393; N7 272,367;
+  N4 3,734,909 (A), 3,732,593 (B); N3 43,249,271 boxes (A), 226,118,751 (B); all PASS (`r13/certA_r15_e300_cap30M.log`
+  and `r13/certA_r15_e300.log`, `r13/fresh_clone/fresh_certA_r15_e300.log`, `r13/fresh_clone/fresh_certB_r15_e300.log`;
+  hashes `r13/hashes_r15_e300.txt`, which refer to the lab copies).
+- **Red controls** (each must fail): eps = 3.05·10⁻⁴ fails N5 in both programs (run by `check.sh`); a six-component cut
+  made negative at x = 0 fails N7 (Program A, located; Program B by its value −10⁻⁶ at x = 0); Ψ below its float
+  supremum and the six-component cuts removed are refused as point controls in both programs
+  (`r13/redpoint300_final.log`); earlier parameter sets have their own controls (Section 8 of the proof).
 - **The certified inputs** (I1)–(I8), by two programs each, after a code audit: `r13/lane1_fixed/` (Program A
   `progA_checks.py` groups SC, K, W, Z, C, H, G1–G4 and `closure.py`; Program B `progB.c`, C with MPFR), logs in
   `r13/lane1_fixed/logs/`. (I9): `r13/jk_kernels/` (group GK2, both programs, red controls). Boppana: `r13/boppana/`.
@@ -85,5 +89,5 @@ proofs can be read and checked, and the computations rerun with the programs her
 ## Licence and citation
 
 Documents, parameter files, logs and text are under CC BY 4.0 (`LICENSE`); the code is under the MIT licence
-(`LICENSE-CODE`). Please cite as: Arhan Canli, *Union-closed families: c_UC ≥ c* + 2.9·10⁻⁴*,
+(`LICENSE-CODE`). Please cite as: Arhan Canli, *Union-closed families: c_UC ≥ c* + 3.0·10⁻⁴*,
 https://github.com/arhancanli/quantavane-union-closed (2026), together with Sadhu–Ursin and Costa–Sadhu.

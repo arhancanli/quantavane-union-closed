@@ -1,8 +1,8 @@
 #!/bin/sh
 # One command:
-#   sh check.sh          standard check: Program A on every finite inequality N1-N6 (about 15-30 minutes), Program B on
-#                        N5, N1, N2, N6, the red control for N5, Proposition P, and the translate computations (small groups)
-#   sh check.sh full     also Program B on N4 and N3 (about 3 hours)
+#   sh check.sh          standard check: Program A on every finite inequality N1-N7 (about 1.5-2 hours), Program B on
+#                        N5, N1, N2, N6, N7, the red control for N5, Proposition P, and the translate computations (small groups)
+#   sh check.sh full     also Program B on N4 and N3 (about 16-18 hours; N3 has 226 million boxes)
 # Needs one Python with python-flint (0.9.0 used here) and mpmath (1.3.0 used here): set PYTHON=/path/to/python.
 # The certified inputs (I1)-(I9) and Boppana's inequality (I6) have their own programs and logs (see README.md).
 set -eu
@@ -13,18 +13,18 @@ fail() { echo "CHECK FAILED: $*"; exit 1; }
 "$PY" -c 'import flint, mpmath' 2>/dev/null || fail "PYTHON needs python-flint and mpmath (pip install python-flint==0.9.0 mpmath)"
 T=$(mktemp -d); trap 'rm -rf "$T"' EXIT
 
-echo "1. Program A (python-flint, Arb balls), parameters r13/params_e290.json (eps = 29/100000): N5 N1 N2 N6 N4 N3"
-"$PY" -I r13/certA_cut.py r13/params_e290.json N5 N1 N2 N6 N4 N3 | tee "$T/A.txt" | grep -E "^N[0-9]:"
-for g in N5 N1 N2 N6 N4 N3; do grep -q "^$g: PASS" "$T/A.txt" || fail "Program A, $g"; done
+echo "1. Program A (python-flint, Arb balls), parameters r13/params_r15_e300.json (eps = 3/10000): N5 N1 N2 N6 N7 N4 N3"
+"$PY" -I r13/certA_v2.py r13/params_r15_e300.json N5 N1 N2 N6 N7 N4 N3 | tee "$T/A.txt" | grep -E "^N[0-9]:"
+for g in N5 N1 N2 N6 N7 N4 N3; do grep -q "^$g: PASS" "$T/A.txt" || fail "Program A, $g"; done
 
 echo "2. Program B (binary64 outward intervals + mpmath.iv), written separately"
-if [ "$MODE" = full ]; then GB="N5 N1 N2 N6 N4 N3"; else GB="N5 N1 N2 N6"; fi
-"$PY" -I r13/certB_cut.py r13/params_e290.json $GB | tee "$T/B.txt" | grep -E "^N[0-9]:"
+if [ "$MODE" = full ]; then GB="N5 N1 N2 N6 N7 N4 N3"; else GB="N5 N1 N2 N6 N7"; fi
+"$PY" -I r13/certB_v2.py r13/params_r15_e300.json $GB | tee "$T/B.txt" | grep -E "^N[0-9]:"
 for g in $GB; do grep -q "^$g: PASS" "$T/B.txt" || fail "Program B, $g"; done
 
-echo "3. Red control: eps = 59/200000 (2.95e-4) must fail N5 in both programs"
-"$PY" -I r13/certA_cut.py r13/red285_eps295.json N5 | grep -q "^N5: FAIL" || fail "Program A accepted eps = 2.95e-4"
-"$PY" -I r13/certB_cut.py r13/red285_eps295.json N5 | grep -q "^N5: FAIL" || fail "Program B accepted eps = 2.95e-4"
+echo "3. Red control: eps = 61/200000 (3.05e-4) must fail N5 in both programs"
+"$PY" -I r13/certA_v2.py r13/red300_eps305.json N5 | grep -q "^N5: FAIL" || fail "Program A accepted eps = 3.05e-4"
+"$PY" -I r13/certB_v2.py r13/red300_eps305.json N5 | grep -q "^N5: FAIL" || fail "Program B accepted eps = 3.05e-4"
 echo "   refused by both"
 
 echo "4. Proposition P (barrier): PASS at eps = 1205/10^6, FAIL just below eps_P (12044/10^7), in both programs"
@@ -41,4 +41,4 @@ echo "5. Translates: exhaustive check of the reciprocity and of Frankl's conditi
 [ "$(grep -c 'step failures: 0 \[\]' "$T/G.txt")" = 5 ] || fail "translate step failures"
 [ "$(grep -c 'Frankl failures: 0' "$T/G.txt")" = 5 ] || fail "translate Frankl failures"
 echo "   ok"
-echo "ALL CHECKS PASSED ($MODE): c_UC >= c* + 29/100000 = 0.38317525996679779...; Proposition P; translate computations."
+echo "ALL CHECKS PASSED ($MODE): c_UC >= c* + 3/10000 = 0.38318525996679779...; Proposition P; translate computations."

@@ -1,10 +1,11 @@
 # Changes made for the public copy
 
-The files here are copies of our working repository (19 November 2026). Edits: the status sentence of
+The files here are copies of our working repository (19 November 2026; proof v5, its logs and hashes added 20 November
+2026). Edits: the status sentence of
 `r13/SELF_CONTAINED.md` and the date line of `translates/note.tex` (plus its new AI paragraph) were updated for
 release; local absolute paths in the scripts listed below were made relative to the repository root (or written as
 `<python>`, `<scratch>/`). Program logic is unchanged, and the certifying programs (`r13/certA_cut.py`,
-`r13/certB_cut.py`), the parameter files and the certified-input programs did not change. The hashes recorded in
+`r13/certB_cut.py`), the parameter files and the certified-input programs did not change (nor did `r13/certA_v2.py`, `r13/certB_v2.py` and `r13/params_r15_e300.json`). The hashes recorded in
 `r13/hashes_*.txt` and `r13/lane1_fixed/hashes_final.txt` refer to the lab versions.
 
 | file | SHA-256 as first copied (the lab version, except for the files named in the status-line edits above) | SHA-256 here |

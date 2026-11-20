@@ -1,23 +1,25 @@
-# c_UC >= c* + 2.9e-4: one self-contained proof (v4: v3 plus moment-hull cuts for N3, Lemma 6.4 and N6)
+# c_UC >= c* + 3.0e-4: one self-contained proof (v5: v4 plus Jensen-free kernels, Lemma 6.5 and N7)
 
 Quantavane union-closed lane, round 13. Draft written 18 Nov 2026, 20:4x +04; updated 21:2x to the 2.3e-4 parameter set; v2 21:57 (all fixes of
 the full fresh referee); v2.1 23:0x (all fixes of the short referee of the added parts); v3 19 Nov 00:1x (the new input (I9) and
 the 2.7e-4 parameters; short fresh referee VALID WITH FIXES, applied; v3 kept as `SELF_CONTAINED_v3_e270.md`); v4 19 Nov 13:4x
-(round 14: Lemma 6.4, the finite inequality N6, N3 on D_G cut by N6's cuts, and the 2.85e-4 and 2.9e-4 parameters; v2.1 kept as `SELF_CONTAINED_v2_1_e230.md`; Appendices A-B fold in every finite-check reduction, so this file stands alone; v1 is kept as
-`SELF_CONTAINED_v1_refereed.md`). Public copy (deposit of 19 Nov 2026; this status sentence is the only change): not yet peer reviewed. Every lemma taken from Sadhu-Ursin (SU: A. Sadhu and T. Ursin, "An improved lower bound for union-closed
+(round 14: Lemma 6.4, the finite inequality N6, N3 on D_G cut by N6's cuts, and the 2.85e-4 and 2.9e-4 parameters; v4 kept as
+`SELF_CONTAINED_v4_e290.md`); v5 20 Nov 19:0x (round 15: Lemma 6.5, N7, w_lo in EF_lo, and the 3.0e-4 parameters; v2.1 kept as `SELF_CONTAINED_v2_1_e230.md`; Appendices A-B fold in every finite-check reduction, so this file stands alone; v1 is kept as
+`SELF_CONTAINED_v1_refereed.md`). Public copy (deposit of 20 Nov 2026; this status sentence is the only change): not yet peer reviewed. Every lemma taken from Sadhu-Ursin (SU: A. Sadhu and T. Ursin, "An improved lower bound for union-closed
 families", Zenodo 10.5281/zenodo.23322347, v1, 12 Oct 2026, unrefereed) is credited to them and re-proved here. SU equations are
 cited by their LaTeX labels (paper.tex in `../../../union-closed/lit/zen_23322347/UC92_compact/`). The new parts (Lemma 6.1,
 Theorem JB, Lemmas 6.2-6.3, Lemma 3.2(d), N1-N5, Appendix B; NOTEBOOK.md Sec. 13) are ours. Status of every ingredient: Section 9.
 
 **Theorem.** Every finite union-closed family with a nonempty member has an element that belongs to more than a fraction
-c* + 29/100000 = 0.38317525996679779... of its members. Hence c_UC >= c* + 2.9e-4. (With `params_e285.json` in place of
-`params_e290.json` the same proof gives c* + 2.85e-4. v3 of this document, without Lemma 6.4 and
+c* + 3/10000 = 0.38318525996679779... of its members. Hence c_UC >= c* + 3.0e-4 (parameter file `params_r15_e300.json`).
+(Without Lemma 6.5, the same proof with `params_e290.json` or `params_e285.json` gives c* + 2.9e-4 or c* + 2.85e-4. v3 of this document, without Lemma 6.4 and
 with `params_e270.json`, gives c* + 2.7e-4; v2.1, also without (I9) and with `params_e230.json`, gives c* + 2.3e-4 and was refereed
 in full.) (If the family has one member, that member is
 nonempty and each of its elements has abundance 1; the rest of the proof assumes |F| >= 2. The same proof with the parameter files
 `params.json` and `params_e225.json` gives c* + 2e-4 and c* + 2.25e-4. Every parameter set is certified by two programs; the
 2.25e-4, 2.3e-4 and 2.7e-4 sets were checked by short fresh referees; the 2.85e-4 and 2.9e-4 sets use the same proof plus Lemma 6.4, and that change
-was checked by a short fresh referee (19 Nov 13:5x: VALID WITH FIXES, all applied).)
+was checked by a short fresh referee (19 Nov 13:5x: VALID WITH FIXES, all applied); the 3.0e-4 set adds Lemma 6.5, checked by a
+short fresh referee (19 Nov 22:1x: VALID WITH FIXES, all applied).)
 Here c* = 1 - m with m from (1.1) below; c* = 0.38288525996679779... is the ceiling of every single-coordinate (mean-weighted
 product) entropy inequality (Costa-Sadhu, arXiv 2610.02295; Sadhu, Zenodo 10.5281/zenodo.22225967; see also Jiang, arXiv 2609.08291).
 
@@ -172,11 +174,13 @@ delta(a0) = sum_j (a_j - e*)[P(N >= j) - (1 - a0)]. The bracket lies in [a0 - 1,
 sum_j (a_j - e*) = H_G - d e*. Nothing here uses a0 = 3/8. QED.
 
 ## 6. The new parts (ours; NOTEBOOK.md Sec. 13)
-**Parameters** (`params_e290.json`). eps = 29/100000, a0 = 19/100, mu = 14/5, theta = 31, Psi = 1513/100000, kernel (I9), five cuts (Lemma 6.4)
-(z = 77/200, R_max = 431/2000, e1 = 1/200, eight minorants). With beta, b0, W, eta from Sec. 5, put A0 = W/2,
-B' = eta (t0 + D) + W (a0 - 1/2) - mu d0, Gamma0 = eta t0 - mu (1 - a*). Values: eta = 0.460654846537, W = 0.288324007081,
-A0 = 0.144162003540, B' = 0.113268919745, A0 + B' = 0.257431 > 0, A0 - B' = 0.030893 > 0, Gamma0 = 0.0332055490313.
-(`params_e285.json` differs only in eps = 57/200000. The 2.7e-4 set of v3, `params_e270.json`: eps = 27/100000, a0 = 21/100,
+**Parameters** (`params_r15_e300.json`). eps = 3/10000, a0 = 9/50, mu = 14/5, theta = 61/2, Psi = 703/50000, kernel (I9), five cuts
+(Lemma 6.4) and 23 six-component cuts (Lemma 6.5) (z = 77/200, R_max = 431/2000, e1 = 1/200, eight minorants). With beta, b0, W, eta
+from Sec. 5, put A0 = W/2, B' = eta (t0 + D) + W (a0 - 1/2) - mu d0, Gamma0 = eta t0 - mu (1 - a*). Values: eta = 0.449986952230,
+W = 0.281033923979, A0 = 0.140516961990, B' = 0.108836662284, A0 + B' = 0.24935 > 0, A0 - B' = 0.031680 > 0, Gamma0 = 0.0324183331206.
+(The 2.9e-4 set of v4, `params_e290.json`: eps = 29/100000, a0 = 19/100, theta = 31, Psi = 1513/100000, five cuts, no 6-cuts;
+eta = 0.460654846537, W = 0.288324007081, B' = 0.113268919745, Gamma0 = 0.0332055490313; `params_e285.json` differs from it only in
+eps = 57/200000. The 2.7e-4 set of v3, `params_e270.json`: eps = 27/100000, a0 = 21/100,
 theta = 35, Psi = 1537/100000, no cuts; eta = 0.48121287198, W = 0.30317225585, B' = 0.12221008247, A0 + B' = 0.27380,
 A0 - B' = 0.029376, Gamma0 = 0.0347225873757.)
 Per law (Sec. 1): x = e - e*, sigma' = E[(X - m) h(X)] + D e - b_m m, beta(X) = g + 2 (s - m + eps) e,
@@ -217,12 +221,14 @@ U_i - e_i = -(1 - a*) e_i + d0 x_i - (a* e_i + d0 x_i - U_i) for i in G. Collect
 **Lemma 6.2 (= 13.2, G side).** For a law with s >= m - eps, e >= z, and any CIID coupling, with t = (s - e/p - b-bar)/c (1.4),
 v-bar = e - h_r t, x = e - e*: (s, e, b-bar, R-bar) is in
   D_G = {s in [m - eps, 1], e in [z, L], b-bar in [0,1], R-bar in [0, R_max], 0 < t <= 1, e <= (4/5) t + 27/400, e <= h(s)}
-and l_G - theta beta <= Lambda_G, where EF_lo = max(2 k_E t v-bar^2, 2 kappa_F t R-bar, 2 t ((3/20) v-bar^2 + (51/2000) R-bar))
-(the third entry is (I9) integrated against mu x mu, then Jensen E v^2 >= v-bar^2),
+and l_G - theta beta <= Lambda_G, where EF_lo = max(2 k_E t w_lo, 2 kappa_F t R-bar, 2 t ((3/20) w_lo + (51/2000) R-bar)) with
+w_lo = max(v-bar^2, max over the 6-cuts k with alpha_5^k > 0 of -(alpha_0^k + alpha_1^k s + alpha_2^k e + alpha_3^k t + alpha_4^k R-bar)/alpha_5^k)
+(Lemma 6.5; with no 6-cuts, w_lo = v-bar^2 as in v4; the first and third entries are (I3) and (I9) integrated against mu x mu, which
+give 2 k_E t E v^2 and 2 t ((3/20) E v^2 + (51/2000) R-bar), increasing in E v^2 >= w_lo),
 Jp_lo = max(0, q b-bar (2t/5 - 1/(25 L)) - (11q/25) R-bar), and
   Lambda_G = (A0 + B') x_+ + (A0 - B') x_- + [b_m b-bar + (1 + C) R-bar + b_m (m - s)]_+ + mu (a* e + d0 x + q L t^2 - 2 s e)
              - (mu + theta) EF_lo - theta Jp_lo - 2 theta (s - m + eps) e.
-Proof. U = EF - qLt^2 + 2se (1.3), g = EF + Jp (3.2 a); EF >= EF_lo (3.2 b), Jp >= Jp_lo (3.2 d); C R-bar - sigma' <=
+Proof. U = EF - qLt^2 + 2se (1.3), g = EF + Jp (3.2 a); EF >= EF_lo (3.2 b without its last Jensen step, and Lemma 6.5), Jp >= Jp_lo (3.2 d); C R-bar - sigma' <=
 b_m b-bar + (1 + C) R-bar + b_m (m - s) (3.3). The coefficients of EF and Jp in l_G - theta beta are -(mu + theta) and -theta.
 Domain: (I1) and N1 (R <= R_max); t = E phi in [0,1]; (I5) integrated; e <= h(s) by Jensen; t > 0 since e >= z > 27/400. QED.
 **Lemma 6.3 (= 13.3, T side).** For a law with s >= m - eps, e <= z, and any CIID coupling, (e, t, s) is in
@@ -245,22 +251,43 @@ Proof. g is continuous on [0,1] (h, phi and R are), so alpha . g(X) is a bounded
 corner e = z, R-bar ~ R_max, and the contact region s = m - eps, e ~ 0.61, b-bar ~ 0. A floating-point separation LP says neither is a
 moment point of any law; for the corner this is now rigorous (cut 4, alpha0 = 17993/62500, certified by N6, excludes it), for the
 contact region it remains a floating-point statement. The cuts were found by the LP in floating point; only N6 certifies them.)
+**Lemma 6.5 (no Jensen step; ours, round 15).** Let alpha in Q^6 with alpha . g6(x) > 0 for every x in [0,1], where
+g6(x) = (1, x, h(x), phi(x), R(x), v(x)^2) (finite inequality N7). Then every law of X in [0,1] satisfies
+alpha_0 + alpha_1 s + alpha_2 e + alpha_3 t + alpha_4 R-bar + alpha_5 E v(X)^2 >= 0. In Lemma 6.2 put w = E v(X)^2 and
+w_lo = max(v-bar^2, max over the 6-cuts with alpha_5 > 0 of -(alpha_0 + alpha_1 s + alpha_2 e + alpha_3 t + alpha_4 R-bar)/alpha_5).
+Then w >= w_lo, and Lemma 6.2 holds with v-bar^2 replaced by w_lo in EF_lo.
+Proof. g6 is continuous on [0,1]; take expectations; w >= v-bar^2 is Jensen. (I3) integrated against mu x mu gives EF >= 2 k_E t w
+and (I9) gives EF >= 2 t ((3/20) w + (51/2000) R-bar) (independent copies, no Jensen step); both increase in w since t >= 0, so
+they are >= the same expressions at w_lo. 6-cuts with alpha_5 = 0 are cuts of Lemma 6.4; alpha_5 < 0 is not used. QED.
 
 ## 7. The finite inequalities (ours) and the analytic small-e part
 N1: R <= R_max = 431/2000 on [0,1]. N2: sqrt(x h(x)) >= a_k phi(x) + b_k h(x) + c_k x + d_k on [0,1], k = 1..8.
 N3: Lambda_G - Psi e <= 0 on D_G^cut (Lemma 6.4). N4: Lambda_T - Psi e <= 0 on D_T. N5: (M).
 N6: alpha_k . g(x) > 0 on [0,1] for each of the 5 cuts alpha_k of `params_e285.json` and `params_e290.json` (key 'cuts', identical; R as in N1, i.e.
 R(x) = [h(r x) + qL phi(x) - x h_r - r h(x)]/(qL), which is F(r, x)/(qL) since phi(r) = 1).
+N7: alpha_k . g6(x) > 0 on [0,1] for each of the 23 6-cuts of `params_r15_e300.json` (key 'cuts6'; v(x)^2 = (h(x) - h_r phi(x))^2).
+In the 3.0e-4 set, N3 uses EF_lo with w_lo (Lemma 6.5) in place of v-bar^2.
 Small e in N4 (analytic): put P_m = mu(2(m - eps) - 1) - m - Gamma0 + Psi. Using sig_lo^2 >= 0, U0 >= 2se - qLt^2, and
 L t^2 <= (98/25) e^2 + (25/2) g_lo (from g_lo >= (4/25)((sqrt(L) t - 7e/5)_+)^2), with s = m - eps + delta:
 Lambda_T - Psi e <= e [-P_m - 2(mu + theta) delta + (98/25) mu q e] + g_lo [(25/2) mu q - theta] <= 0 if theta >= (25/2) mu q
-(8.198 <= 31) and e <= P_m/((98/25) mu q) (P_m = 0.0190282551214, bound 0.0074014 >= 1/200); N4 is then checked by bisection on
-e in [1/200, z]. N5 margin: Gamma0 - Psi - 2 eps theta = 0.0000955490313377 (N5 would fail just above eps = 2.9154e-4).
+(8.198 <= 30.5) and e <= P_m/((98/25) mu q) (P_m = 0.0186894710321, bound 0.0072696 >= 1/200); N4 is then checked by bisection on
+e in [1/200, z]. N5 margin: Gamma0 - Psi - 2 eps theta = 0.0000583331206310 (N5 would fail just above eps = 3.00956e-4).
+(For the 2.9e-4 set: theta = 31, P_m = 0.0190282551214, bound 0.0074014, N5 margin 0.0000955490313377.)
 (For the 2.85e-4 set: P_m = 0.0190562551214, bound 0.0074123, N5 margin 0.000405549031338.)
 (For the 2.7e-4 set of v3: theta = 35, P_m = 0.0178632, bound 0.0069482, N5 margin 0.00045258737569.)
-Proof of the Theorem: (P_G) from Lemmas 6.2 and 6.4 and N3 (with N1 and N6); (P_T) from Lemma 6.3, N4 and N2; (M) is N5; Theorem JB.
+Proof of the Theorem: (P_G) from Lemmas 6.2, 6.4 and 6.5 and N3 (with N1, N6 and N7); (P_T) from Lemma 6.3, N4 and N2; (M) is N5; Theorem JB.
 
-## 8. Certificates for N1-N6
+## 8. Certificates for N1-N7
+**The 3.0e-4 set (v5).** `params_r15_e300.json`. Program A `certA_v2.py` and Program B `certB_v2.py` are `certA_cut.py` /
+`certB_cut.py` plus N7 and the w_lo rule in N3 (and larger N3 box caps: A 300M, B 1,000M). Program A: N5 0.0000583331206310,
+N1 757, N2 38,814, N6 232,393, N7 272,367, N4 3,734,909 (`certA_r15_e300_cap30M.log`, whose N3 stopped at the old 30M cap), N3
+43,249,271 boxes (`certA_r15_e300.log`, cap 300M), all PASS; the same Program A from the fresh clone at 9ddf4556 reproduces every
+count (`fresh_clone/fresh_certA_r15_e300.log`, a reproducibility extra). Program B from a fresh clone at commit 9ddf4556
+(`fresh_clone/fresh_certB_r15_e300.log`): N5 5.83331206310347e-05, N1 757, N2 38,814, N6 232,393, N7 272,367, N4 3,732,593, N3 226,118,751
+(58,641 s), all PASS. Hashes: `hashes_r15_e300.txt`.
+Red controls (`redpoint300_final.log`, committed code): a 6-cut with alpha_0 = -1e-6: N7 FAIL in A (located near x = 0.6518), B's own
+value at x = 0 is -1e-6; eps = 3.05e-4: N5 FAIL in both (-2.4667e-4); Psi = 0.0138: point control +6.344e-5 in both; no 6-cuts
+(Jensen step back): point control +2.087e-4 in both, at (s_min, 0.60623, 6.635e-4, 1.845e-3).
 **The 2.85e-4 set (v4).** `params_e285.json`: eps = 57/200000, a0 = 19/100, mu = 14/5, theta = 31, Psi = 1513/100000, z, R_max, e1,
 minorants and the kernel (I9) as in `params_e270.json`, plus 5 cuts. Program A `certA_cut.py` and Program B `certB_cut.py` are
 `certA_jk.py` / `certB_jk.py` plus (i) N6 (1-D bisection; Program A regroups alpha . g as alpha0 + (alpha1 - alpha4 h_r/(qL)) x +
@@ -321,6 +348,7 @@ cap) and a raised minorant fails N2 (A located; B by a point control). Logs `cer
 | all lane-1 checks above | lane 1's programs, patched copies in `lane1_fixed/` | code-audit referee (18 Nov 21:4x): all certified with fixes; fixes applied in `lane1_fixed/` in both programs (exact radii, edge closures SCX/ZX and closure.py, C3 on [0, 0.34], exact 4/5 in C4, exact C3 radius, r-ball check RB); full re-run of every group with the final sources; sources, binaries and logs hashed in `lane1_fixed/hashes_final.txt` |
 | (I9) joint kernel | ours (App. A.9) | two programs (edge reduction, RB, contact Hessian, bisection), red controls (27/1000; a = 1 breaks the edge reduction; contact perturbation fails RB), fresh clone; short fresh referee of the 2.7e-4 change (19 Nov 00:0x): VALID |
 | Lemma 6.1, Theorem JB, Lemmas 6.2, 6.3 | ours (NOTEBOOK 13) | JB referee 18 Nov 20:1x: VALID; full referee 18 Nov 22:0x: valid |
+| Lemma 6.5, N7 (Jensen-free kernels) | ours (round 15) | two programs (N7 and N3 with w_lo), red controls (Sec. 8), fresh clone; short fresh referee: 19 Nov 22:1x: VALID WITH FIXES, all applied |
 | Lemma 6.4, N6 (cuts) | ours (round 14) | two programs (N6 and N3 with the cuts), red controls (Sec. 8), fresh clone; short fresh referee of the change (19 Nov 13:5x): VALID WITH FIXES (wording, one red control; all applied); short referee of the 2.9e-4 delta (16:5x): VALID WITH FIXES (wording; applied) |
 | N1-N5 | ours | two programs, red controls (stated exactly in Sec. 8), fresh clones (2e-4, 2.3e-4, 2.7e-4, 2.85e-4 and 2.9e-4 sets); short referee of the 2.7e-4 set (19 Nov 00:0x): VALID WITH FIXES (documentation only, applied); referee read both programs; short referee of the 2.25e-4 and 2.3e-4 sets |
 NOT checked by our lab, or checked only partly: (1) The parts new in v2 (Section 2's citations, Appendix A's marked parts, Appendix B,
@@ -332,7 +360,7 @@ on the parameter set), and several Program B red controls are point controls (Se
 lane 1's 16 Nov runs (coarse, on the unpatched code), the code-audit referee's fine controls (18 Nov, on its patched copies; all
 bite) and our contact-only and SCX controls on the final copies. SU's own programs are not used anywhere.
 Unused parts of SU: Section 4 (t_min, the E-bound, A2, Prop. 4.1), Lemma 5.2 (Gamma, S5), Section 7 (S6) and the paper's final
-margin. So the trust base is S1-S4 (Appendix A), (I6) (Appendix B), (I9) (A.9) and N1-N6.
+margin. So the trust base is S1-S4 (Appendix A), (I6) (Appendix B), (I9) (A.9) and N1-N7.
 
 ## Appendix A. Reductions of the certified inputs I1-I5, I7, I8 to finite checks
 Source: lane 1's EDGE_LEMMAS.md (16 Nov 2026), folded in verbatim in substance; the checks are run by lane 1's two programs
