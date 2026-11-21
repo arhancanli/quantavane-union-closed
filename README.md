@@ -93,8 +93,27 @@ by Anthropic) working for Quantavane under Arhan Canli's direction. Programs des
 code but were written with the same AI system. No mathematician outside Quantavane has reviewed this repository; the
 proofs can be read and checked, and the computations rerun with the programs here or with your own.
 
-## Licence and citation
+## Licence
 
 Documents, parameter files, logs and text are under CC BY 4.0 (`LICENSE`); the code is under the MIT licence
-(`LICENSE-CODE`). Please cite as: Arhan Canli, *Union-closed families: c_UC ≥ c* + 3.0·10⁻⁴*,
+(`LICENSE-CODE`).
+
+## How to cite
+
+Please cite as: Arhan Canli, *Union-closed families: c_UC ≥ c* + 3.0·10⁻⁴*,
 https://github.com/arhancanli/quantavane-union-closed (2026), together with Sadhu–Ursin and Costa–Sadhu.
+
+```bibtex
+@misc{quantavane-union-closed,
+  author       = {Canli, Arhan},
+  title        = {Union-closed families: {$c_{\mathrm{UC}} \ge c^* + 3.0 \cdot 10^{-4}$}, a barrier for the method, and unions of translates},
+  year         = {2026},
+  howpublished = {\url{https://github.com/arhancanli/quantavane-union-closed}},
+  note         = {Quantavane; CC BY 4.0; code MIT}
+}
+```
+
+[CITATION.cff](CITATION.cff) gives the same reference for GitHub's "Cite this repository" button.
+
+Known uses of this work are listed in [USED_BY.md](USED_BY.md). If you use it, please open an issue or a pull request
+with a link so that yours can be added.
