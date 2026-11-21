@@ -1,0 +1,2 @@
+seed 1: families 1477; max |(log|F| - sum U) - sum E d| = 9.99e-16; max |J0+D0 - sum E d| = 2.31e-14; Lemma F violations 0; two-sided version violations 0; max lhs2/(H - sum U) = 0.5003
+seed 2: families 1477; max |(log|F| - sum U) - sum E d| = 9.99e-16; max |J0+D0 - sum E d| = 3.04e-14; Lemma F violations 0; two-sided version violations 0; max lhs2/(H - sum U) = 0.5293

@@ -68,6 +68,13 @@ cuts (Lemma 6.4), the Jensen-free kernel bounds (Lemma 6.5) and the finite inequ
   abelian groups and is a quantitative form of the duality of Johnson and Vaughan for these families. Internal referee
   VALID WITH FIXES; exhaustive checks in groups of order up to 27 (`translates/`). The general non-abelian case is open.
 
+- **Lemma F** (`lemma_f/LEMMA_F.md`): for a finite union-closed family and independent uniform members A and B, the identity
+  log|F| - Σᵢ Uᵢ = Σᵢ E d(Qᵢ(A_<ᵢ)Qᵢ(B_<ᵢ) ‖ Qᵢ(A_<ᵢ ∪ B_<ᵢ)), and its consequence that a coordinate forced present by one
+  copy's prefix is, on average, nearly forced present at the union's prefix: the expected absence probabilities there, summed
+  over coordinates, are at most the slack log|F| − Σᵢ Uᵢ (at most 2ε log|F| when every abundance is at most c* + ε, by Sadhu and
+  Ursin's budget Σᵢ Vᵢ ≤ log|F|). Two internal referees (VALID; VALID WITH FIXES, applied); two separately written numerical
+  checks (the second with two red controls). It does not by itself improve the constant.
+
 The few files edited for this public copy (status sentences, local paths) are listed with their hashes in
 `PUBLIC_COPY_CHANGES.md`.
 

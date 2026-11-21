@@ -1,0 +1,6 @@
+union-closed families: tested 300, failures 0, max |identity residual| 1.9859e-39
+RESULT: PASS
+RED CONTROL (non-union-closed families): tested 151, failures 151, max |identity residual| +inf
+RESULT: FAIL (as a red control must)
+RED CONTROL 2 (Q at union prefixes x 0.999): tested 300, failures 300, max |identity residual| 0.0035582
+RESULT: FAIL (as a red control must)
